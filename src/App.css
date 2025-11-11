@@ -1,0 +1,35 @@
+/* App.css - Additional global styles */
+
+/* Smooth scroll behavior is already in index.css */
+
+/* Ensure full width layout */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section spacing utilities */
+section {
+  position: relative;
+  width: 100%;
+}
+
+/* Utility classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Loading animation for content */
+.fade-in {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Prevent horizontal scroll */
+body, html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
