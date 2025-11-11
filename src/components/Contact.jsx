@@ -11,8 +11,8 @@ const Contact = () => {
     {
       icon: "✉️",
       title: "Email",
-      value: "srilekhasanka@gmail.com",
-      link: "mailto:srilekhasanka@gmail.com"
+      value: "mohanasrisanka@gmail.com",
+      link: "mailto:mohanasrisanka@gmail.com"
     },
     {
       icon: "📍",
@@ -61,7 +61,7 @@ const Contact = () => {
           </div>
           <div className="contact-cta">
             <p className="cta-text">Ready to start a conversation?</p>
-            <a href="mailto:srilekhasanka@gmail.com" className="btn btn-primary btn-large">
+            <a href="mailto:mohanasrisanka@gmail.com" className="btn btn-primary btn-large">
               Send me an email
             </a>
           </div>

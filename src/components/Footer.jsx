@@ -35,8 +35,8 @@ const Footer = () => {
               <a href="tel:7569977592" className="footer-link">
                 📞 7569977592
               </a>
-              <a href="mailto:srilekhasanka@gmail.com" className="footer-link">
-                ✉️ srilekhasanka@gmail.com
+              <a href="mailto:mohanasrisanka@gmail.com" className="footer-link">
+                ✉️ mohanasrisanka@gmail.com
               </a>
               <a
                 href="https://www.linkedin.com/in/srilekha-sanka-b5a74b271"

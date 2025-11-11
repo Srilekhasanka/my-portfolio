@@ -31,7 +31,7 @@ const Hero = () => {
             <a href="tel:7569977592" className="hero-link" title="Phone">
               📞
             </a>
-            <a href="mailto:srilekhasanka@gmail.com" className="hero-link" title="Email">
+            <a href="mailto:mohanasrisanka@gmail.com" className="hero-link" title="Email">
               ✉️
             </a>
             <a
