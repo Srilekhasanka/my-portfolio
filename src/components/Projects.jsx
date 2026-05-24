@@ -3,60 +3,68 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
-      title: "LionCharge",
+      title: "LionCharge — Enterprise EV Charging Platform",
       icon: "⚡",
-      description: "Backend application for EV charging station analytics with real-time dashboards and AI-powered assistants.",
+      company: "Antino Labs",
+      description: "Production OCPP 1.6/2.0 backend powering real-time charger control, multi-tenant operator dashboards, and Razorpay-based session billing across 100+ live charging stations.",
       highlights: [
-        "Designed and maintained backend applications using Node.js, Express.js, TypeScript, and PostgreSQL. ",
-        "Built dynamic dashboards for real-time electric vehicle charging station analytics. ",
-        "Improved database performance and API efficiency to enhance user experience and application scalability.",
-        "Debugged and resolved issues in the existing CRUD APIs, ensuring smoother data operations and reduced downtime.",
-        "Developed an AI agent integrating Charging Assistant, Payment Assistant, and other intelligent modules for enhanced user interaction using n8n.",
-        "Gained hands-on experience with OCPP protocol and acquired foundational knowledge of the Beckn Protocol for EV charging ecosystems."
+        "Shipped OCPP 1.6/2.0 WebSocket backend for real-time remote start/stop, diagnostics, and firmware updates across 100+ live charging stations.",
+        "Engineered multi-tenant RBAC (operators, site managers, drivers); optimized PostgreSQL query plans cutting dashboard load time ~60% via composite indexing and materialized views.",
+        "Integrated Razorpay for session billing — checkout initiation, webhook signature verification, refund workflows, and payment reconciliation against session records.",
+        "Built AWS SNS notification pipeline delivering charger fault alerts, session completions, and payment confirmations with sub-2s SLA."
       ],
-      tags: ["Node.js", "TypeScript", "PostgreSQL", "n8n", "OCPP"]
+      tags: ["Node.js", "TypeScript", "PostgreSQL", "OCPP 1.6/2.0", "WebSockets", "Razorpay", "AWS SNS"]
     },
     {
-      title: "Emoneeds",
-      icon: "🏥",
-      description: "Hospital management system backend for a mental health care platform with assessment modules and patient portals.",
+      title: "Axon Energies — EV Fleet Management & Log Monitoring",
+      icon: "📡",
+      company: "Antino Labs",
+      description: "ELK-powered observability platform for EV fleets — explicit Elasticsearch mappings, ILM-driven retention, and Cashfree billing for charging subscriptions.",
       highlights: [
-        "Enhanced hospital management system backend using JavaScript, Node.js, and MongoDB for Emoneeds, a mental health care platform.",
-        "Worked on resolving critical issues in existing modules, especially within the Assessment scoring logic, ensuring accurate and consistent results across patient records.",
-        "Improved assessment modules, fixed bugs, and optimized backend logic to support seamless integration with the frontend team’s UI updates.",
-        "Wrote comprehensive test cases to understand and validate the flow of various portals (Admin, Psychologist, and Patient), which helped in uncovering hidden issues and improving QA coverage.",
-        "Contributed to sprint deliverables by writing reusable code, reviewing merge requests, and assisting in deployment tasks.",
-        "Actively participated in team meetings and project discussions to align with development goals and client requirements."
+        "Architected dedicated Elasticsearch index with explicit keyword/date/integer field mappings for OCPP charger log ingestion — preventing auto-mapping failures requiring costly full reindex.",
+        "Configured rolling index templates + ILM policies for time-series log retention with automatic shard rollover as charger fleet scales.",
+        "Integrated Cashfree for EV session billing and fleet subscriptions — order creation, webhook verification, payment capture, and idempotent refund flows.",
+        "Built OCPP boot-notification, meter-value, and status-change event ingestion into ELK, powering real-time Kibana dashboards for fleet uptime, fault codes, and energy throughput."
       ],
-      tags: ["JavaScript", "Node.js", "MongoDB", "Testing"]
+      tags: ["Node.js", "TypeScript", "PostgreSQL", "OCPP", "Elasticsearch", "Kibana", "Cashfree", "AWS EC2"]
     },
     {
-      title: "Vaku Learning",
+      title: "Rayna Tours — AI Social Media Management Platform",
+      icon: "🤖",
+      company: "Antino Labs",
+      description: "End-to-end AI-driven social publishing admin — GPT-4o caption generation, async Nano Banana image pipeline, and BullMQ-orchestrated 5-state post lifecycle with GA4 attribution.",
+      highlights: [
+        "Built social publishing admin platform — PostForme unified API publishes composed posts to Instagram, LinkedIn, Facebook, and X in a single call, eliminating per-platform integration overhead.",
+        "Integrated GPT-4o caption generation returning 3 strategic variants (FOMO hook · storytelling · direct sell) per campaign; admin rejection notes looped back as negative examples to self-improve output quality.",
+        "Designed async AI image pipeline: SQS → Lambda → Fargate → Nano Banana (Gemini 2.5 Flash) → S3 → CloudFront; result delivered to composer via WebSocket in 3–8s.",
+        "Implemented 5-state post lifecycle (Draft → Review → Approved → Scheduled → Published) with BullMQ Redis scheduler and UTM injection on all outgoing links for GA4 attribution."
+      ],
+      tags: ["Node.js", "TypeScript", "GPT-4o", "Nano Banana", "BullMQ", "SQS", "Lambda", "Fargate", "S3", "CloudFront"]
+    },
+    {
+      title: "Vaaku Learning — EdTech LMS Platform",
       icon: "📚",
-      description: "Full-stack learning management platform with AI-driven content generation and gamification features.",
+      company: "Freelance",
+      description: "Full-stack LMS serving 5,000+ users — JWT refresh-token auth, gamification engine with measurable retention lift, and n8n-automated lifecycle campaigns.",
       highlights: [
-        "Designed and developed a full-stack learning management platform with admin and user portals, featuring content generation, progress tracking, and gamification.",
-        "Built a secure admin authentication system with JWT-based login and role-based access control.",
-        "Integrated gamification mechanics such as XP points, streak tracking, and achievement keys to improve user engagement and retention.",
-        "Implemented AI-driven content generation using FAi (custom AI integration) for automated course material and quiz creation.",
-        "Developed an upload service to AWS S3 for managing user-generated and AI-generated learning content efficiently.",
-        "Utilized MongoDB for managing user profiles, gamification stats, and localized content with optimized query performance.",
-        "Designed localization support (i18n) enabling dynamic content delivery across multiple locales.",
-        "Implemented a scalable and maintainable modular TypeScript architecture following clean code and SOLID principles to deliver a modern, responsive admin dashboard for content moderation, analytics, and learner insights."
+        "Architected JWT + refresh-token RBAC authentication serving 5,000+ users across student, instructor, and admin roles.",
+        "Built gamification engine (XP, streaks, badges, leaderboard) improving 30-day learner retention by ~25%.",
+        "Integrated S3 + CloudFront CDN cutting media load latency ~45%.",
+        "Automated onboarding and re-engagement campaigns via n8n chatbot workflows — eliminated 8+ hrs/week of manual outreach."
       ],
-      tags: ["TypeScript", "MongoDB", "AWS S3", "AI", "Gamification"]
+      tags: ["Node.js", "TypeScript", "PostgreSQL", "JWT", "AWS S3", "CloudFront", "n8n"]
     },
     {
-      title: "Shine-care",
-      icon: "🏢",
-      description: "Admin management portal for centralized organizational dashboard control and analytics.",
+      title: "OpenCredits — EdTech Fintech & Student Lending",
+      icon: "🎓",
+      company: "Freelance · US-based",
+      description: "Student lending platform integrating Stripe-based loan flows, secure signed-URL course delivery, and a MongoDB rule-based credit eligibility engine.",
       highlights: [
-        "Developed an admin management portal enabling centralized control over all organizational dashboards and key operational data.",
-        "Designed dynamic dashboard modules allowing real-time analytics, user management, and performance monitoring.",
-        "Implemented modular RESTful APIs in Node.js for smooth integration between front-end dashboards and backend services.",
-        "User management and operational data control"
+        "Built Stripe integration for loan disbursement and EMI repayments — checkout sessions, subscription billing, webhook signature verification, refund flows with full audit logging.",
+        "Engineered S3 + CloudFront signed-URL pipeline for secure course video uploads and protected CDN streaming delivery to US-based learners.",
+        "Designed rule-based credit eligibility engine (MongoDB) generating real-time lending decisions; fixed critical assessment logic bugs ensuring 100% score accuracy — unblocking first commercial lending partner go-live."
       ],
-      tags: ["Node.js", "RESTful API", "Analytics", "Admin Portal"]
+      tags: ["Node.js", "TypeScript", "MongoDB", "Stripe", "AWS S3", "CloudFront CDN"]
     }
   ];
 
@@ -72,7 +80,12 @@ const Projects = () => {
             <div key={index} className="project-card">
               <div className="project-header">
                 <div className="project-icon">{project.icon}</div>
-                <h3 className="project-title">{project.title}</h3>
+                <div>
+                  <h3 className="project-title">{project.title}</h3>
+                  {project.company && (
+                    <span className="project-company">{project.company}</span>
+                  )}
+                </div>
               </div>
               <p className="project-description">{project.description}</p>
               <ul className="project-highlights">

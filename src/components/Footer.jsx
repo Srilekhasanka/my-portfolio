@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="logo-text">Srilekha Sanka</span>
             </div>
             <p className="footer-tagline">
-              Building scalable solutions with passion and precision.
+              Backend Engineer — Node.js · TypeScript · AWS · OCPP · Payments · AI infra.
             </p>
           </div>
 
@@ -32,11 +32,11 @@ const Footer = () => {
           <div className="footer-contact">
             <h4 className="footer-title">Get In Touch</h4>
             <div className="contact-links">
-              <a href="tel:7569977592" className="footer-link">
-                📞 7569977592
+              <a href="tel:+917569977592" className="footer-link">
+                📞 +91 75699 77592
               </a>
-              <a href="mailto:mohanasrisanka@gmail.com" className="footer-link">
-                ✉️ mohanasrisanka@gmail.com
+              <a href="mailto:srilekhasanka2003@gmail.com" className="footer-link">
+                ✉️ srilekhasanka2003@gmail.com
               </a>
               <a
                 href="https://www.linkedin.com/in/srilekha-sanka-b5a74b271"

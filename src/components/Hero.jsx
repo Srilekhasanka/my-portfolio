@@ -13,11 +13,12 @@ const Hero = () => {
             Srilekha Sanka
           </h1>
           <div className="title-highlight">
-            <span className="highlight-text">Node.js Developer</span>
+            <span className="highlight-text">Backend Engineer · Node.js / TypeScript</span>
           </div>
           <p className="hero-description">
-            Crafting scalable backend solutions with Node.js, Express.js, and TypeScript.
-            Passionate about clean code, performance optimization, and building meaningful applications.
+            I build high-throughput backend systems across EV charging, EdTech, and fintech —
+            OCPP WebSocket platforms, multi-gateway payments (Stripe · Razorpay · Cashfree),
+            AWS-native data pipelines, and AI-powered automation at production scale.
           </p>
           <div className="hero-buttons">
             <a href="#contact" className="btn btn-primary">
@@ -28,10 +29,10 @@ const Hero = () => {
             </a>
           </div>
           <div className="hero-links">
-            <a href="tel:7569977592" className="hero-link" title="Phone">
+            <a href="tel:+917569977592" className="hero-link" title="Phone">
               📞
             </a>
-            <a href="mailto:mohanasrisanka@gmail.com" className="hero-link" title="Email">
+            <a href="mailto:srilekhasanka2003@gmail.com" className="hero-link" title="Email">
               ✉️
             </a>
             <a

@@ -5,25 +5,25 @@ const Contact = () => {
     {
       icon: "📞",
       title: "Phone",
-      value: "7569977592",
-      link: "tel:7569977592"
+      value: "+91 75699 77592",
+      link: "tel:+917569977592"
     },
     {
       icon: "✉️",
       title: "Email",
-      value: "mohanasrisanka@gmail.com",
-      link: "mailto:mohanasrisanka@gmail.com"
+      value: "srilekhasanka2003@gmail.com",
+      link: "mailto:srilekhasanka2003@gmail.com"
     },
     {
       icon: "📍",
       title: "Location",
-      value: "H.No: 1-108, Annapureddipalli,Telangana",
+      value: "Hyderabad, India",
       link: null
     },
     {
       icon: "💼",
       title: "LinkedIn",
-      value: "srilekha-sanka-b5a74b271",
+      value: "srilekha-sanka",
       link: "https://www.linkedin.com/in/srilekha-sanka-b5a74b271"
     }
   ];
@@ -35,7 +35,7 @@ const Contact = () => {
           <span className="section-label">Get In Touch</span>
           <h2 className="section-title">Contact Me</h2>
           <p className="contact-subtitle">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            Open to backend engineering roles, EV / fintech / EdTech systems work, and AI-infra collaborations. Let's build something that ships.
           </p>
         </div>
         <div className="contact-content">
@@ -61,7 +61,7 @@ const Contact = () => {
           </div>
           <div className="contact-cta">
             <p className="cta-text">Ready to start a conversation?</p>
-            <a href="mailto:mohanasrisanka@gmail.com" className="btn btn-primary btn-large">
+            <a href="mailto:srilekhasanka2003@gmail.com" className="btn btn-primary btn-large">
               Send me an email
             </a>
           </div>

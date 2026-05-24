@@ -11,38 +11,40 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p className="about-description">
-              I'm a passionate <strong>Node.js Developer</strong> with hands-on experience
-              in backend and full-stack development. I specialize in building scalable
-              applications using modern technologies like Node.js, Express.js, TypeScript,
-              and both SQL and NoSQL databases.
+              I'm a <strong>Backend Engineer</strong> with 2.5 years building high-throughput
+              <strong> Node.js / TypeScript</strong> services across <strong>EV charging, EdTech,
+              and fintech</strong> verticals. My work centers on OCPP protocol systems,
+              multi-gateway payment integrations, and AWS-native cloud infrastructure.
             </p>
             <p className="about-description">
-              Currently working as a <strong>Software Developer Intern at Antino Labs</strong>,
-              I actively contribute to developing backend features, building real-time analytics
-              dashboards, and optimizing API performance. I thrive in agile environments and
-              believe in writing clean, maintainable code.
+              At <strong>Antino Labs</strong>, I'm the sole backend engineer behind OCPP integration
+              and ELK-based charger log monitoring across two live EV platforms — LionCharge and
+              Axon Energies — and I designed Rayna Tours' <strong>AI social media admin</strong>
+              with GPT-4o caption generation and an async image pipeline through Lambda, Fargate,
+              and Nano Banana (Gemini 2.5 Flash).
             </p>
             <p className="about-description">
-              My expertise lies in debugging complex issues, performance optimization, and
-              delivering solutions that make a real impact. I'm always eager to learn new
-              technologies and take on challenging projects that push my boundaries.
+              I have a strong bias toward <strong>clean architecture and measurable production
+              outcomes</strong> — query plans that cut dashboard load 60%, sub-2s SLA alerting,
+              zero payment integrity incidents post-launch, and 25% lift in 30-day learner
+              retention. I work best where backend correctness meets real user impact.
             </p>
           </div>
           <div className="about-stats">
             <div className="stat-card">
-              <div className="stat-icon">💼</div>
-              <div className="stat-number">1+</div>
-              <div className="stat-label">Years Experience</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-icon">🚀</div>
-              <div className="stat-number">4+</div>
-              <div className="stat-label">Projects Completed</div>
-            </div>
-            <div className="stat-card">
               <div className="stat-icon">⚡</div>
-              <div className="stat-number">10+</div>
-              <div className="stat-label">Technologies</div>
+              <div className="stat-number">100+</div>
+              <div className="stat-label">Live EV Charging Stations</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-icon">💳</div>
+              <div className="stat-number">3</div>
+              <div className="stat-label">Payment Gateways Shipped</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-icon">📈</div>
+              <div className="stat-number">5,000+</div>
+              <div className="stat-label">Users Served in Production</div>
             </div>
           </div>
         </div>
